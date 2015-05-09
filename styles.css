@@ -54,10 +54,19 @@ body ::-webkit-scrollbar {
 }
 html .nav-title,
 body .nav-title {
-  opacity: 0.95;
-  filter: alpha(opacity=95);
+  opacity: 0.99;
+  filter: alpha(opacity=99);
+  -webkit-filter: opacity(0.99);
+  -moz-filter: opacity(0.99);
+  -o-filter: opacity(0.99);
+  -ms-filter: opacity(0.99);
+  filter: opacity(0.99);
   /* For IE8 and earlier */
-  border-bottom-color: #337ab7;
+  border: none;
+}
+html .nav-footer,
+body .nav-footer {
+  border: none;
 }
 html .name,
 body .name {
