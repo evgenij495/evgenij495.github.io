@@ -1,0 +1,28 @@
+html,
+body {
+  background-color: #333333;
+  color: #ffffff;
+  font-style: normal;
+  font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+.red {
+  color: #ff0000;
+}
+.blue {
+  color: #3333ff;
+}
+.green {
+  color: #33cc66;
+}
+.black {
+  color: #333333;
+}
+.white {
+  color: #ffffff;
+}
+.grey {
+  color: #cccccc;
+}
