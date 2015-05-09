@@ -52,6 +52,12 @@ html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   display: none;
 }
+html .nav-title,
+body .nav-title {
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  /* For IE8 and earlier */
+}
 html .name,
 body .name {
   padding: 20px 0px 10px 0px;
