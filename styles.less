@@ -1,3 +1,7 @@
+// media
+@screen-xs-max: 768px;
+@screen-sm-max: 992px;
+@screen-md-max: 1200px;
 // colors
 @c_red: #FF0000;
 @c_blue: #3333FF;
@@ -21,6 +25,7 @@
 // classes
 html,
 body {
+    min-width: 320px;
     background-color: @c_black;
     color: @f_default_color;
     font-style: @f_default_style;
@@ -28,30 +33,128 @@ body {
     font-size: @f_default_size;
     line-height: @f_default_line_height;
     font-weight: @f_default_font_weight;
+    .expertise {
+        .width-offset(200px);
+        .display-inline-block();
+        vertical-align: top;
+        padding-left: 30px;
+    }
+    .profile {
+        width: 190px;
+        .display-inline-block();
+        vertical-align: top;
+    }
+    @media screen and (max-width: @screen-xs-max) {
+        .h1, h1 {
+            font-size: 22px
+        }
+        .h2,
+        h2 {
+            font-size: 20px
+        }
+        .h3,
+        h3 {
+            font-size: 18px
+        }
+        p {
+            font-size: 14px;
+        }
+
+        .expertise {
+            .width-offset(0px);
+            .display-block();
+            padding-left: 0px;
+        }
+        .profile {
+            width: 150px;
+            .display-block();
+        }
+    }
+    @media screen and (min-width: @screen-xs-max) and (max-width: @screen-sm-max) {
+        .h1, h1 {
+            font-size: 28px
+        }
+        .h2,
+        h2 {
+            font-size: 26px
+        }
+        .h3,
+        h3 {
+            font-size: 24px
+        }
+        p {
+            font-size: 16px;
+        }
+
+        .expertise {
+            .width-offset(190px);
+        }
+        .profile {
+            width: 170px;
+        }
+    }
 }
 
 // utils
 // colors
-.red {
+.red-text {
     color: @c_red;
 }
 
-.blue {
+.blue-text {
     color: @c_blue;
 }
 
-.green {
+.green-text {
     color: @c_green;
 }
 
-.black {
+.black-text {
     color: @c_black;
 }
 
-.white {
+.white-text {
     color: @c_white;
 }
 
-.grey {
+.grey-text {
     color: @c_grey;
 }
+
+// dimentional
+.padding(@top: 10px, @right: 10px, @bottom: 10px, @left: 10px) {
+	padding: @top, @right, @bottom, @left;
+}
+.padding {
+    padding: 10px;
+}
+.padding-top {
+    padding-top: 10px;
+}
+.padding-right {
+    padding-right: 10px;
+}
+.padding-bottom {
+    padding-bottom: 10px;
+}
+.padding-left {
+    padding-left: 10px;
+}
+
+.width-offset (@offset) {
+    width: -moz-calc(~"100%" - @offset);
+    width: -webkit-calc(~"100%" - @offset);
+    width: -o-calc(~"100%" - @offset);
+    width: calc(~"100%" - @offset);
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+//misc
+// media queries

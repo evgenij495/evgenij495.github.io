@@ -1,5 +1,6 @@
 html,
 body {
+  min-width: 320px;
   background-color: #333333;
   color: #ffffff;
   font-style: normal;
@@ -8,21 +9,131 @@ body {
   line-height: 1.45;
   font-weight: 400;
 }
-.red {
+html .expertise,
+body .expertise {
+  width: -moz-calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+  width: -o-calc(100% - 200px);
+  width: calc(100% - 200px);
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 30px;
+}
+html .profile,
+body .profile {
+  width: 190px;
+  display: inline-block;
+  vertical-align: top;
+}
+@media screen and (max-width: 768px) {
+  html .h1,
+  body .h1,
+  html h1,
+  body h1 {
+    font-size: 22px;
+  }
+  html .h2,
+  body .h2,
+  html h2,
+  body h2 {
+    font-size: 20px;
+  }
+  html .h3,
+  body .h3,
+  html h3,
+  body h3 {
+    font-size: 18px;
+  }
+  html p,
+  body p {
+    font-size: 14px;
+  }
+  html .expertise,
+  body .expertise {
+    width: -moz-calc(100% - 0px);
+    width: -webkit-calc(100% - 0px);
+    width: -o-calc(100% - 0px);
+    width: calc(100% - 0px);
+    display: block;
+    padding-left: 0px;
+  }
+  html .profile,
+  body .profile {
+    width: 150px;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  html .h1,
+  body .h1,
+  html h1,
+  body h1 {
+    font-size: 28px;
+  }
+  html .h2,
+  body .h2,
+  html h2,
+  body h2 {
+    font-size: 26px;
+  }
+  html .h3,
+  body .h3,
+  html h3,
+  body h3 {
+    font-size: 24px;
+  }
+  html p,
+  body p {
+    font-size: 16px;
+  }
+  html .expertise,
+  body .expertise {
+    width: -moz-calc(100% - 190px);
+    width: -webkit-calc(100% - 190px);
+    width: -o-calc(100% - 190px);
+    width: calc(100% - 190px);
+  }
+  html .profile,
+  body .profile {
+    width: 170px;
+  }
+}
+.red-text {
   color: #ff0000;
 }
-.blue {
+.blue-text {
   color: #3333ff;
 }
-.green {
+.green-text {
   color: #33cc66;
 }
-.black {
+.black-text {
   color: #333333;
 }
-.white {
+.white-text {
   color: #ffffff;
 }
-.grey {
+.grey-text {
   color: #cccccc;
+}
+.padding {
+  padding: 10px;
+}
+.padding-top {
+  padding-top: 10px;
+}
+.padding-right {
+  padding-right: 10px;
+}
+.padding-bottom {
+  padding-bottom: 10px;
+}
+.padding-left {
+  padding-left: 10px;
+}
+.display-block {
+  display: block;
+}
+.display-inline-block {
+  display: inline-block;
 }
