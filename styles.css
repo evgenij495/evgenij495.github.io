@@ -46,6 +46,15 @@ body {
   font-size: 18px;
   line-height: 1.45;
   font-weight: 400;
+  padding-top: 60px;
+}
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  display: none;
+}
+html .name,
+body .name {
+  padding: 20px 0px 10px 0px;
 }
 html .expertise,
 body .expertise {
@@ -74,6 +83,10 @@ body .navbar {
 html .social-icons,
 body .social-icons {
   font-size: 32px;
+}
+html blockquote,
+body blockquote {
+  border-left-color: #337ab7;
 }
 @media screen and (max-width: 768px) {
   html .h1,
@@ -152,7 +165,7 @@ body .social-icons {
   color: #ff0000;
 }
 .blue-text {
-  color: #3333ff;
+  color: #337ab7;
 }
 .green-text {
   color: #33cc66;

@@ -4,7 +4,7 @@
 @screen-md-max: 1200px;
 // colors
 @c_red: #FF0000;
-@c_blue: #3333FF;
+@c_blue: #337AB7;
 @c_green: #33CC66;
 @c_black: #333333;
 @c_white: #FFFFFF;
@@ -76,6 +76,9 @@
 // classes
 html,
 body {
+	::-webkit-scrollbar { 
+    	display: none; 
+	}
     min-width: 320px;
     background-color: @c_black;
     color: @f_default_color;
@@ -84,6 +87,10 @@ body {
     font-size: @f_default_size;
     line-height: @f_default_line_height;
     font-weight: @f_default_font_weight;
+    padding-top: 60px;
+    .name {
+    	.padding(20px, 0px, 10px, 0px);
+    }
     .expertise {
         .width-offset(200px);
         .display-inline-block();
@@ -103,6 +110,9 @@ body {
     }
     .social-icons {
     	font-size: 32px;
+    }
+    blockquote {
+    	border-left-color: @c_blue;
     }
     @media screen and (max-width: @screen-xs-max) {
         .h1, h1 {
@@ -181,7 +191,7 @@ body {
 
 // dimentional
 .padding(@top: 10px, @right: 10px, @bottom: 10px, @left: 10px) {
-    padding: @top, @right, @bottom, @left;
+    padding: @top @right @bottom @left;
 }
 
 .padding {
