@@ -215,3 +215,11 @@ body blockquote {
 .display-inline-block {
   display: inline-block;
 }
+.nowrap {
+  white-space: nowrap;
+}
+.elipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

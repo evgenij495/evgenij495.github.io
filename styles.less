@@ -245,6 +245,8 @@ body {
     width: calc(~"100%" - @offset);
 }
 
+// textual
+
 .display-block {
     display: block;
 }
@@ -253,5 +255,12 @@ body {
     display: inline-block;
 }
 
-//misc
-// media queries
+.nowrap {
+	white-space: nowrap;
+}
+
+.elipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
