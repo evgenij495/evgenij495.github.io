@@ -23,66 +23,65 @@
 @f_default_line_height: 1.45;
 @f_default_font_weight: 400;
 // icons
-
 @font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-msankn');
-	src:url('fonts/icomoon.eot?#iefix-msankn') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-msankn') format('woff'),
-		url('fonts/icomoon.ttf?-msankn') format('truetype'),
-		url('fonts/icomoon.svg?-msankn#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?-msankn');
+    src: url('fonts/icomoon.eot?#iefix-msankn') format('embedded-opentype'), url('fonts/icomoon.woff?-msankn') format('woff'), url('fonts/icomoon.ttf?-msankn') format('truetype'), url('fonts/icomoon.svg?-msankn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-mail:before {
-	content: "\ea83";
+    content: "\ea83";
 }
 
 .icon-twitter2:before {
-	content: "\ea92";
+    content: "\ea92";
 }
 
 .icon-steam2:before {
-	content: "\eaae";
+    content: "\eaae";
 }
 
 .icon-github:before {
-	content: "\eab1";
+    content: "\eab1";
 }
 
 .icon-linkedin:before {
-	content: "\eac8";
+    content: "\eac8";
 }
 
 .icon-stackoverflow:before {
-	content: "\eacf";
+    content: "\eacf";
 }
 
 // classes
 html,
 body {
-	::-webkit-scrollbar { 
-    	display: none; 
-	}
-	.nav-title {
-		    opacity: 0.95;
-    		filter: alpha(opacity=95); /* For IE8 and earlier */
-	}
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .nav-title {
+        opacity: 0.95;
+        filter: alpha(opacity=95);
+        /* For IE8 and earlier */
+        border-bottom-color: @c_blue;
+    }
     min-width: 320px;
     background-color: @c_black;
     color: @f_default_color;
@@ -91,9 +90,9 @@ body {
     font-size: @f_default_size;
     line-height: @f_default_line_height;
     font-weight: @f_default_font_weight;
-    padding-top: 60px;
+    padding-top: 50px;
     .name {
-    	.padding(20px, 0px, 10px, 0px);
+        .padding(10px, 0px, 10px, 0px);
     }
     .expertise {
         .width-offset(200px);
@@ -113,10 +112,10 @@ body {
         border-radius: 0;
     }
     .social-icons {
-    	font-size: 32px;
+        font-size: 32px;
     }
     blockquote {
-    	border-left-color: @c_blue;
+        border-left-color: @c_blue;
     }
     @media screen and (max-width: @screen-xs-max) {
         .h1, h1 {
@@ -194,7 +193,10 @@ body {
 }
 
 // dimentional
-.padding(@top: 10px, @right: 10px, @bottom: 10px, @left: 10px) {
+.padding(@top: 10px,
+@right: 10px,
+@bottom: 10px,
+@left: 10px) {
     padding: @top @right @bottom @left;
 }
 
@@ -218,7 +220,10 @@ body {
     padding-left: 10px;
 }
 
-.margin(@top: 10px, @right: 10px, @bottom: 10px, @left: 10px) {
+.margin(@top: 10px,
+@right: 10px,
+@bottom: 10px,
+@left: 10px) {
     margin: @top, @right, @bottom, @left;
 }
 
@@ -250,7 +255,6 @@ body {
 }
 
 // textual
-
 .display-block {
     display: block;
 }
@@ -260,11 +264,11 @@ body {
 }
 
 .nowrap {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .elipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

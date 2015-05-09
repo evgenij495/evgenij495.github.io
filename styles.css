@@ -46,7 +46,7 @@ body {
   font-size: 18px;
   line-height: 1.45;
   font-weight: 400;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
@@ -57,10 +57,11 @@ body .nav-title {
   opacity: 0.95;
   filter: alpha(opacity=95);
   /* For IE8 and earlier */
+  border-bottom-color: #337ab7;
 }
 html .name,
 body .name {
-  padding: 20px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 html .expertise,
 body .expertise {
