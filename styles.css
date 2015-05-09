@@ -131,6 +131,21 @@ body .profile {
 .padding-left {
   padding-left: 10px;
 }
+.margin {
+  margin: 10px;
+}
+.margin-top {
+  margin-top: 10px;
+}
+.margin-right {
+  margin-right: 10px;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.margin-left {
+  margin-left: 10px;
+}
 .display-block {
   display: block;
 }
