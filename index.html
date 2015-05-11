@@ -1,120 +1,23 @@
-<!doctype html>
-<html>
+---
+layout: default
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Evgeny Carwood | About Me</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+<div class="home">
 
-    ga('create', 'UA-62788810-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <link rel="shortcut icon" type="image/png" href="images/profile.jpeg" />
-</head>
+  <h1 class="page-heading">Posts</h1>
 
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top nav-title">
-        <div class="container">
-            <h1 class="name blue-text">Evgeny Carwood</h1>
-        </div>
-        <div class="blur-overlay"></div>
-    </nav>
-    <div class="container">
-        <div class="padding">
-            <div class="profile center-block">
-                <img src="images/profile.jpeg" class="img-responsive img-circle" alt="profile image">
-            </div>
-            <div class="expertise text-center">
-                <h1>Software Development Engineer</h1>
-                <h2>Web Applications Developer</h2>
-                <h3>Mobile Applications Developer</h3>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="padding">
-            <h1>Work Experience</h1>
-            <p>Summary of work experiences</p>
-            <div class="panel panel-default">
-                <div class="panel-heading">present | <b class="blue-text">IBM</b></div>
-                <div class="panel-body black-text">
-                    <p>Web application development</p>
-                    <p>Responsive web design</p>
-                    <p>Mobile application development</p>
-                    <p>Performance testing</p>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">2011 | <b class="blue-text">Curam Software</b></div>
-                <div class="panel-body black-text">
-                    <p>Web application development</p>
-                    <p>Web application maintenance</p>
-                    <p>Web application testing</p>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">2010 | <b class="blue-text">ACUSTEK</b></div>
-                <div class="panel-body black-text">
-                    <p>Web application development</p>
-                    <p>Web application design</p>
-                    <p>Web application maintenance</p>
-                    <p>Search engine optimisation</p>
-                    <p>Content managemet system</p>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">2009 | <b class="blue-text">Keywords Studios</b></div>
-                <div class="panel-body black-text">
-                    <p>Localisation testing</p>
-                </div>
-            </div>
-        </div>
-        <div class="padding">
-            <h1>Education</h1>
-            <div class="panel panel-default">
-                <div class="panel-heading elipsis">2012 | <b class="blue-text">Dublin City University</b></div>
-                <div class="panel-body black-text">
-                    <p>B. Sc. in Computer Applications</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-inverse navbar-static-bottom nav-footer">
-        <div class="container">
-            <div class="navbar-text navbar-right">
-                <p>Follow me on:</p>
-                <a href="mailto:ugncrwd@icloud.com"><span class="social-icons glyphicon icon-mail" aria-hidden="true"></span></a>
-                <a href="https://twitter.com/ugncrwd"><span class="social-icons glyphicon icon-twitter2" aria-hidden="true"></span></a>
-                <a href="https://github.com/evgenij495"><span class="social-icons glyphicon icon-github" aria-hidden="true"></span></a>
-                <a href="https://ie.linkedin.com/pub/eugene-carwood/18/4a5/10"><span class="social-icons glyphicon icon-linkedin" aria-hidden="true"></span></a>
-                <a href="http://stackoverflow.com/users/1226197/eugene"><span class="social-icons glyphicon icon-stackoverflow" aria-hidden="true"></span></a>
-                <a href="http://steamcommunity.com/id/eugo"><span class="social-icons glyphicon icon-steam2" aria-hidden="true"></span></a>
-            </div>
-            <div class="navbar-text display-inline-block">
-                <blockquote>
-                    <p>If opportunity doesn't knock, build a door.</p>
-                    <footer>Milton Berle</footer>
-                </blockquote>
-            </div>
-        </div>
-    </nav>
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</body>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-</html>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
