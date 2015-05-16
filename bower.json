@@ -1,0 +1,24 @@
+{
+  "name": "ecarwood.com",
+  "version": "1",
+  "homepage": "ecarwood.com",
+  "authors": [
+    "Evgenij <evgenij495@users.noreply.github.com>"
+  ],
+  "description": "portfolio blog site",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "Private",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ]
+}
