@@ -1,0 +1,27 @@
+{
+  "name": "ecarwood.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "browserify app.js -o bundle.js",
+    "watch": "watchify app.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evgenij495/evgenij495.github.io.git"
+  },
+  "author": "Evgeny Carwood (http://ecarwood.com)",
+  "license": "Private",
+  "bugs": {
+    "url": "https://github.com/evgenij495/evgenij495.github.io/issues"
+  },
+  "homepage": "https://github.com/evgenij495/evgenij495.github.io",
+  "devDependencies": {
+    "browserify": "^10.2.0",
+    "watchify": "^3.2.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
